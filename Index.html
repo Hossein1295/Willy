@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>
+KAVI MAITOBA SERVICES</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+ 
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+   /* align-items: center;
+    padding: 10px 20px;*/
+}
+
+.logo img {
+    height: 70px;
+}
+
+  .Me{
+Color:#FF0000;
+font-weight: bold;
+}
+
+
+nav {
+    background-color: #0044cc;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+         .text-box h1{
+font-size: 55px;
+}
+
+.text-box  p{
+margin:10px 0 40px;
+font-size: 35px;
+/*color:#fff;*/
+} 
+/*.textbox p:nth-child(2){
+margin:10px 0 40px;
+font-size: 10px;
+}*/
+
+.hero-btn{
+display:inline-block;
+text-decoratin:none;
+colore:#fff;
+border:1px solid #fff;
+padding:12px  34px;
+font-size:13px;
+background:transparent;
+position:relative;
+cursor:pointer;
+}
+
+.hero-btn:hover{
+border: 1px solid #f44336;
+background:#f44336;
+transition: 1s;
+}
+
+nav  .fa{
+display:none;
+}
+@media(max-width:700px){
+.text-box h1{
+font-size: 20px;
+
+}
+.text-box p{
+font-size:14px;
+}
+.nav-links ul li{
+display:block;
+}
+
+.nav-links{
+    /* position: absolute;*/
+position:fixed;
+background: #f44336;
+height: 100vh;
+width: 200px;
+top: 0;
+right:-200px;
+text-align:left;
+z-index: 2;
+transition: 1s;
+}
+nav  .fa{
+display:block;
+color:#fff;
+margin:10px;
+font-size:22px;
+cursor:pointer;
+
+}
+.nav-links ul{
+  padding:30px;
+}
+}
+
+
+      
+.about-us {
+width:80%;
+margin:auto;
+padding-top:80px;
+padding-bottom:50px;
+}
+
+.about-col {
+flex-basis:48%;
+  padding:30px 2px;
+}
+
+.about-col h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+   font-family: 'Georgia', serif;
+    color: #2c3e50;
+}
+
+.about-col p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.about-col img{
+width:100%;
+ /*background-size: cover;
+  width: auto;*/
+}
+
+/*@media(max-width:700px){
+.about-us-container{
+           flex-direction: column;
+         }
+}*/
+
+
+
+
+
+
+
+
+.course{
+width:80%;
+margin:auto;
+text-align:center;
+padding-top:100px;
+}
+
+h1{
+font-size:36px;
+font-weight:600;
+}
+p{
+color:#777;
+font-size:20px;
+font-weight:300;
+line-height:22px;
+padding:10px;
+}
+.row{
+margin-top:5%;
+display:flex;
+justify-content: space-between;
+}
+.course-col{
+flex-basis:31%;
+background: #fff3f3;
+border-radius:10px;
+margin-bottom:5%;
+padding:20px 12px;
+box-sizing:border-box;
+transition:0.5s;
+}
+
+h3{
+text-align:center;
+font-weight:600;
+margin:10px 0;
+}
+
+.course-col:hover{
+box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+
+ .contact-section {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info, .contact-form, .map-container {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2, .contact-form h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .contact-info p, .contact-form p {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .contact-info a, .contact-form a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover, .contact-form a:hover {
+            text-decoration: underline;
+        }
+
+        .map-container {
+            height: 450px;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        /* Form styles */
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+
+
+
+/*----------footer-----------*/
+
+.footer{
+width:100%;
+text-align:center;
+padding:30px 0;
+}
+  .footer h4{
+margin-bottom:25x;
+margin-top:20px;
+font-weight:600;
+}
+.footer .fa{
+ color:#f44336;
+margin: 0 13px;
+cursor: pointer;
+padding: 18px 0;
+}
+ .fa-heart-o{
+color:#f44336;
+} 
+
+
+    </style>
+
+    </head>
+        <body>
+<section class="header">
+            <div class="container">       
+            <div class="logo"> 
+           <img src="logo.png" alt="KAVI-logo" > 
+          </div>
+            <div class ="Me">
+          <p>KAVI 
+MANITOBA SERVICES </p>
+            </div>
+     </div>
+           
+           
+            <nav>
+               <div class="nav-links" id="navLinks">
+              <i class="fa  fa-times" onclick="hideMenu()"></i>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                 <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a> </li>
+
+                </ul>
+           </div>
+           
+ <i class="fa  fa-bars" onclick="showMenu()"></i>
+             </nav>
+<div class="text-box">
+         
+<h1>Most Affordable And Professional Transportation</h1>
+<br>
+<p>Regardless of your industry, KAVI offers tailored solutions to meet your business</p> <p>needs. We are giving you a fast, reliable and regular connection to all corners of the</p><p> MANITOBA.</p>
+<p> We offer Higher Quality of service.</p>
+
+
+<a href="" class="hero-btn" >Ask For Price</a>
+
+<a href="" class="hero-btn" >Book Online</a>
+
+
+
+</div>
+         
+</section>
+<!------about us--->
+<section class="about-us">
+<div class="row">
+        <div class="about-col">
+            <h1>About Us</h1>
+            <p>Welcome to KAVI Company . Our mission is to provide exceptional services and solutions that meet the highest standards of quality and professionalism. We are dedicated to building long-lasting relationships with our clients by delivering outstanding results in every project we undertake.</p>
+            <p>With years of experience in the industry, our team is composed of skilled professionals who are passionate about their work and committed to excellence. We believe in innovation, integrity, and collaboration, which are the cornerstones of our company culture.</p>
+            <p>We invite you to learn more about our services and how we can help you achieve your goals. Thank you for choosing KAVI Company. We look forward to working with you.</p>
+        </div>
+        <div class="about-col">
+            <img src="us.jpg" alt="About Us Image">
+        </div>
+    </div>
+</section >
+<section class="Services" >
+
+<h1> Services We Offer</h1>
+
+
+<p>All in one place, on one screen.See how it works! </p>
+
+<div class="row">
+        <div class="course-col">
+               <h3>Get Rates</h3>
+                <p>SAVE MONEY: With KAVI customer support get the answers, information and resources that you need.
+Saving MONEY play a vital role for new startups and small businesses, it is difficult to get any transportaion discounts.With KAVI there is only one phone number to call, one consolidated invoice, live customer support (even after hours!), the latest in technological innovation.  Start saving on your Transportation today!</p>
+         </div>
+<div class="course-col">
+               <h3> Get Transit Times</h3>
+                <p>SAVE TIME:Enter your shipment details or upload all details and see the transporting rates and services from leading courier companies, with KAVI just open Contact Us page,all on one screen. Click and see how it works!  Benefit from the best customer support team available to you and your clients inquiries. </p>
+         </div>
+<div class="course-col">
+               <h3> Compare Rates Now</h3>
+                <p>Transportation play a vital role in our daily lives.  In this page we talk about useful tools that make tanspotation as easy as possiable. Compare rates and transit times for KAVI services and choose the one that is right for you. With KAVI, you will benefits of this rewarding transporting choice. With KAVI you will discover how efficient prices continually help to improve communities around the world.  </p>
+         </div>
+</div>
+
+
+</section >
+
+<section class="testmonials">
+  <h1> What Our Client Says</h1>
+<p> At KAVI, feedback is the heartbeat of what we do. It is not just about hearing what is working-it is about understanding how we can grow, adapt, and deliver even more value. Every comment, suggestion, and insight from our clients and team helps us refine our craft and stay true to our mission. To us, feedback isnot just important; it is essential
+
+ </P>
+
+<div class="row">
+          <div class="testimonial-col">
+           <img src="user1.jpg">
+        <div>
+       <p>"Working with KAVI Manitoba Moving was a game-changer. They took the time to understand exactly what I needed, then delivered something that blew me away. The process was smooth, the communication was spot-on, and the end result was nothing short of exceptional. It is rare to find someone who combines skill with such a personal touch-I cannot recommend them enough!
+
+KAVI Manitoba Moving is awesome i like it."</p>
+<h3>Christine Berkley</h3>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-o"></i>
+<!-------------user name above-------->
+         </div>
+</div>
+
+<div class="testimonial-col">
+           <img src="user2.jpg">
+        <div>
+       <p>"When I started working with KAVI Manitoba Services , I wasnot sure what to expect, but they exceeded every hope I had. Their attention to detail, creativity, and genuine care turned my vision into something better than I could have imagined. Every step felt seamless, and the results speak for themselves-professional, polished, and perfectly me. I am already looking forward to the next project!
+
+KAVI Manitoba Services is wonderful i like it."</p>
+<h3>David  kely</h3>
+ <i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<!-------------user name above-------->
+         </div>
+</div>
+
+</div>
+   </section>
+
+<!------------------contact--------------->
+<div class="mkdf-content">
+    <div class="mkdf-content-inner">
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or need further information, feel free to reach out to us using the contact information below or by visiting our office.</p>
+                    <p><strong>Address:</strong> Unit 2, University Crescent, Winnipeg, Manitoba</p>
+                    <p><strong>Phone:</strong> <a href="tel:+12043991110">(204) 399-1110</a></p>
+                    <p><strong>Fax:</strong> (204) 399-1110</p>
+                    <p><strong>Email:</strong> <a href="mailto:Hussein_dehghani@yahoo.com">Hussein_dehghani@yahoo.com</a></p>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Get Rates & Transit Times</h2>
+                    <form action="https://formspree.io/f/xgvwyarq" method="POST" enctype="multipart/form-data">
+                        <label>
+                            Your Name:
+                            <input type="text" name="name" required>
+                        </label>
+                        <label>
+                            Your Email:
+                            <input type="email" name="email" required>
+                        </label>
+                        <label>
+                            Your Message:
+                            <textarea name="message" required></textarea>
+                        </label>
+                        <label>
+                            Upload a File:
+                            <input type="file" name="upload">
+                        </label>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+
+               <!-----------------<div class="map-container">-------->
+             <!----------------- <div id="map"></div>-------->
+             <!-----------------   </div>-------->
+ <h2>Our Location</h2>
+  
+  <iframe 
+      
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.1234567890!2d-97.1234567!3d49.8765432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2s77%20University%20Crescent%2C%20Winnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1234567890"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+  
+  </iframe>
+
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+<!------------footer---------->
+ 
+<section class="footer">
+<h4> About Us</h4>
+<p>
+Assistant play a vital<br> role in tansportation.
+
+</p>
+<div class="icons">
+    <i  class="fa fa-facebook"></i>
+    <i  class="fa fa-instagram"></i>
+     <i  class="fa fa-linkedin"></i>
+</div>
+
+<p> Made By Hossein dehghani Kazemi all right Reserved</p>
+   
+</section>
+<!------JavaScript forToggle Menu--->
+<script>
+var navLink=document.getElementById("navLinks");
+function showMenu(){
+navLinks.style.right="0";
+}
+
+function hideMenu(){
+navLinks.style.right="-200px";
+}
+
+ </script>       
+
+
+
+
+
+
+
+    </body>
+</html>
